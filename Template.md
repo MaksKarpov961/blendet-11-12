@@ -26,3 +26,16 @@
 ![](images/chicken.png)
 ![](images/salad.png)
 ![](images/borshch.png)
+
+## What our Customers Say
+
+![](images/avatar-1-min.png)
+![](images/avatar-2-min.png)
+
+## Subscribe To Get Special Offers
+
+![](images/banana-min.png)
+
+## footer
+
+![LOGO](images/logo.png)
