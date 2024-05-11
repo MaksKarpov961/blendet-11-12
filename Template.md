@@ -1,3 +1,3 @@
 ## header
 
-!(images/logo.png)
+![LOGO](images/logo.png)
