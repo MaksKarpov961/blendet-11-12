@@ -14,8 +14,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
 li,
 figure,
 figcaption,
@@ -30,6 +28,7 @@ dd {
 ul,ol {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 /* Елементи a скидаємо до дефолтних стилів */
@@ -41,6 +40,7 @@ a {
 img {
     max-width: 100%;
     display: block;
+    
 }
 
 
