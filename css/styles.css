@@ -14,12 +14,7 @@ h2,
 h3,
 h4,
 p,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+li{
     margin: 0;
 }
 
@@ -57,23 +52,27 @@ select {
 /* ------------Maksim Karpenko----HEADER------------------------ */
 
 .header {
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-navigation {
+    display: flex;
     
 }
 
 .header-logo {
-    
+
 }
 
 .header-logo-img {
     
+    
 }
 
 .header-list-menu {
-    
+    display: flex;
+    gap: 28px;
 }
 
 .header-item-menu {
