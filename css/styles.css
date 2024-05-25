@@ -1,0 +1,61 @@
+/* -------- НОРМАЛІЗАТОР ---------------------------- */
+
+/* Вказуємо box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Прибираєм внутрішні відступи */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Прибираєм зовнішні відступи */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Видаляємо стандартну стилізацію для всіх ul та il,  які мають атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Елементи a скидаємо до дефолтних стилів */
+a {
+    text-decoration: none;
+}
+
+/* Спрощуємо роботу із зображеннями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Наслідуємо шрифти для інпутів та кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* -------- ----------------------------- ---------------------------- */
