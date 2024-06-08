@@ -235,6 +235,10 @@
                 id="name"
                 type="text"
                 placeholder="Your name"
+                required
+                size="45"
+                pattern="[A-Za-z]{2,15}"
+                title="Введіть Ваше ім'я"
               />
             </div>
             <div class="modal-container-form">
@@ -243,7 +247,10 @@
                 class="modal-input"
                 id="phone"
                 type="tel"
-                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                placeholder="0_ _   _ _ _   _ _   _ _"
+                pattern="[0-9]{10}"
+                title="Введіть свій номер телефону"
+                required
               />
             </div>
             <div class="modal-container-form">
@@ -253,6 +260,9 @@
                 id="email"
                 type="email"
                 placeholder="example@gmail.com"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                title="Введіть електронну пошту"
+                required
               />
             </div>
           </div>
