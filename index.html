@@ -50,7 +50,9 @@
             </li>
           </ul>
         </nav>
-        <button class="header-button" type="button">Order Now</button>
+        <button class="header-button" open-modal type="button">
+          Order Now
+        </button>
       </div>
     </header>
     <main>
@@ -65,7 +67,9 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button type="button" class="hero-button">Order Now</button>
+            <button type="button" open-modal class="hero-button">
+              Order Now
+            </button>
           </div>
           <div class="hero-container-image">
             <img
@@ -216,5 +220,46 @@
     </main>
     <!-- Oleksandr Branickiy footer -->
     <footer></footer>
+
+    <!------------------MODAL OVERLAY------------------>
+    <div modal class="modal-overlay is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" close type="button">X</button>
+        <p class="modal-title">Order Form</p>
+        <form class="modal-form">
+          <div class="modal-form-wrapper">
+            <div class="modal-container-form">
+              <label class="modal-label" for="name">Name</label>
+              <input
+                class="modal-input"
+                id="name"
+                type="text"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="modal-container-form">
+              <label class="modal-label" for="phone">Phone number</label>
+              <input
+                class="modal-input"
+                id="phone"
+                type="tel"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+            </div>
+            <div class="modal-container-form">
+              <label class="modal-label" for="email">E-mail</label>
+              <input
+                class="modal-input"
+                id="email"
+                type="email"
+                placeholder="example@gmail.com"
+              />
+            </div>
+          </div>
+          <button class="modal-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./modal.js" defer></script>
   </body>
 </html>
