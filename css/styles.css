@@ -190,3 +190,142 @@ body {
 .hero-image {
   border-radius: 291px;
 }
+
+
+
+
+/* ----------------MODAL OVERLAY------------------------ */
+
+.modal-overlay {
+  position: fixed;
+  background-color: rgba(94, 99, 99, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 30px;
+  width: 458px;
+  height: 449px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffe550;
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-btn-close:hover,.modal-btn-close:focus{
+  background-color: #bbf330;
+}
+
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #2c2c2c;
+  margin: 0 auto;
+}
+
+.modal-form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2c2c2c;
+  padding-left: 12px;
+}
+
+.modal-input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2c2c2c;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border: 1px solid #7eb101;
+  border-radius: 30px;
+  outline: none;
+  height: 48px;
+  padding-left: 12px;
+}
+
+.modal-input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2c2c2c;
+}
+
+
+
+.modal-button {
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 106px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover, .modal-button:focus{
+  background-color: #bbf330;
+}
+
+/* --------------------------------------- */
